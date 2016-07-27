@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="ear" build-on-make="true" name="explod-war">
+    <output-path>$PROJECT_DIR$/out/artifacts/explod_war</output-path>
+    <root id="archive" name="explod-war.ear" />
+  </artifact>
+</component>
