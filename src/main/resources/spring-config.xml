@@ -9,10 +9,36 @@
        default-lazy-init="true">
 
        <context:component-scan base-package="com.lijw.demo.controller"/>
+       <mvc:annotation-driven/>
        <!-- 视图文件解析配置 -->
        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
               <property name="prefix" value="/WEB-INF/view" />
               <property name="suffix" value=".jsp" />
        </bean>
+      <!--<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+              <property name="alwaysUseFullPath" value="true"/>
+              <property name="messageConverters">
+                     <list>
+                            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                                   <property name="supportedMediaTypes">
+                                          <list>
+                                                 <value>text/plain;charset=UTF-8</value>
+                                          </list>
+                                   </property>
+                            </bean>
+                            <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+                     </list>
+              </property>
+       </bean>-->
+       <!--<bean name="jsonView" class="com.jhj.controller.jsonview.FastJsonViewWrap">
+              <property name="contentType" value="application/json;charset=UTF-8"/>
+              <property name="features">
+                     <array>
+                            &lt;!&ndash; value>WriteMapNullValue</value &ndash;&gt;
+                            <value>QuoteFieldNames</value>
+                            <value>WriteDateUseDateFormat</value>
+                     </array>
+              </property>
+       </bean>-->
       <!-- <mvc:default-servlet-handler />-->
 </beans>
