@@ -15,6 +15,8 @@
               <property name="prefix" value="/WEB-INF/view" />
               <property name="suffix" value=".jsp" />
        </bean>
+        <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
       <!--<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
               <property name="alwaysUseFullPath" value="true"/>
               <property name="messageConverters">

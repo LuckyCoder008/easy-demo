@@ -11,6 +11,9 @@
     <title></title>
 </head>
 <body>
-
+<form method="post" enctype="multipart/form-data" action="/user/doupload">
+  <input type="file" name="file"/>
+  <input type="submit" value="upload" />
+</form>
 </body>
 </html>
